@@ -28,7 +28,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3.3.0
          with
-          version:16
+          version: 16
           
       - name: creating build
         run: npm build
