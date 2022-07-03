@@ -29,6 +29,12 @@ jobs:
         uses: actions/setup-node@v3.2.0
         with: 
           node-version: 16
+      
+      - name: GitHub Action for Yarn
+        uses: Borales/actions-yarn@v2.3.0
+        with:
+          # Yarn command
+          cmd: install
           
       - name: creating build
         run: npm run build
