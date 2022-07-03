@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+.container{
+  max-width: 400px;
+  min-height: 450px;
+  margin: 0 auto;
+  background-color: #efefef;
+  box-shadow: 0 0 10px gray;
+  margin-top: 50px;
+  padding: 15px 50px;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.expense-container{
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0 0 10px gray;
+}
+
+.transaction-list {
+  margin: 0px;
+  padding: 0px;
+}
+
+.transaction-list > li{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 10px gray;
+  padding: 10px 5px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+.transaction-form input{
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px 0;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: skyblue;
+  box-shadow: var(--box-shadow);
+  color: #fff;
+  border: 0;
+  display: block;
+  font-size: 16px;
+  margin: 10px 0 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.btn:focus,
+.delete-btn:focus {
+  outline: 0;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.list li {
+  background-color: #fff;
+  box-shadow: var(--box-shadow);
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.list li.plus {
+  border-right: 5px solid #2ecc71;
+}
+
+.list li.minus {
+  border-right: 5px solid #c0392b;
+}
+
+.delete-btn {
+  cursor: pointer;
+  background-color: #e74c3c;
+  border: 0;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  padding: 2px 5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(130%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.list li:hover .delete-btn {
+  opacity: 1;
+}
