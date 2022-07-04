@@ -1,5 +1,8 @@
 export const Header = () => {
     return(
-        <h1 className="text-center">Tracker App</h1>
+        <div>
+            <h1 className="text-center">Expense Tracker App</h1>
+            <h3>By M. Awais Khan</h3>
+        </div>
     )
 }
