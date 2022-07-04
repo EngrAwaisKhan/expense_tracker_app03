@@ -1,4 +1,4 @@
- # This is a basic workflow to help you get started with Actions
+# This is a basic workflow to help you get started with Actions
 
 name: CI
 
@@ -18,7 +18,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v2
 
     - name: Setup Node.js environment
       uses: actions/setup-node@v2-beta
@@ -38,4 +38,4 @@ jobs:
       run: npm install -g surge
     
     - name: deploying on surge
-      run: surge ./ build http://expense_tracker_app03.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}
+      run: surge ./build http://expense_tracker_app03.surge.sh --token ${{secrets.token_surge}}
