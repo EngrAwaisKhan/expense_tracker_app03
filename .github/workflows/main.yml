@@ -32,7 +32,7 @@ jobs:
         cmd: install # install npm/install yarn
     
     - name: creating build
-      run: yarn build 
+      run: sudo yarn build 
     
     - name: installing surge 
       run: npm install -g surge
